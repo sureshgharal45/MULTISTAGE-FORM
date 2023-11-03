@@ -23,7 +23,7 @@ const PickAddOns = ({
     <div className="wrapper">
       <h2>Pick add-ons</h2>
       <p className="muted">Add-ons help enhance your gaming experience.</p>
-      <div className="radio-wrapper">
+      <div className="radio-wrapper-checkbox">
         <div className="checkbox-wrapper">
           <input
             type="checkbox"

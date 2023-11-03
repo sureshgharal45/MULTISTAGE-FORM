@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { FormItems, planOptions } from "../App";
-
 // styles
 import "./FormStep.css";
 

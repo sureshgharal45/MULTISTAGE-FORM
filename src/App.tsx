@@ -78,11 +78,11 @@ function App() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // if (isLastStep) return alert("congrats something");
     goForwards();
   };
 
   return (
+    <form className="form" onSubmit={handleSubmit}>
     <div className="app">
       <aside className="sidebar">
         {sideBar.map((item, index) => (
@@ -95,13 +95,13 @@ function App() {
               {index + 1}
             </div>
             <div className="info">
-              <p className="stepNum">Step {index + 1}</p>
+              <p className="stepNum">STEP {index + 1}</p>
               <p className="step">{item}</p>
             </div>
           </div>
         ))}
       </aside>
-      <form className="form" onSubmit={handleSubmit}>
+      {/* <form className="form" onSubmit={handleSubmit}> */}
         {currentIndex === 0 && (
           <PersonalInfo {...formData} updateForm={updateForm} />
         )}
@@ -115,6 +115,21 @@ function App() {
           <FinishingUp {...formData} updateForm={updateForm} />
         )}
         {currentIndex === 4 && <Confirmation />}
+        {/* <div className="steps" hidden={isConfirmation}>
+          {!isFirstStep && (
+            <Button
+              style="back"
+              text="Go back"
+              type="button"
+              onClick={goBackwards}
+            />
+          )}
+          <Button
+            style={isLastStep ? "submit" : "default"}
+            text={isLastStep ? "Confirm" : "Next Step"}
+          />
+        </div> */}
+        </div>
         <div className="steps" hidden={isConfirmation}>
           {!isFirstStep && (
             <Button
@@ -130,7 +145,6 @@ function App() {
           />
         </div>
       </form>
-    </div>
   );
 }
 

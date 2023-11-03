@@ -73,6 +73,7 @@ body {
 h2 {
   color: hsl(var(--dark));
   line-height: 1.1;
+  margin-top: 12%;
 }
 
 /* forms */
@@ -87,6 +88,7 @@ input {
   border: 1px solid hsl(var(--neutral5));
   border-radius: 0.3rem;
   padding: var(--space-2xs) var(--space-xs);
+  /* margin-top: 1%; */
 }
 
 input::placeholder {
@@ -130,6 +132,7 @@ input:not([value=""]):not(:focus):invalid {
 .btn.back {
   --dark: transparent;
   --neutral1: var(--neutral4);
+  margin: -43%;
 }
 
 .btn.back:where(:hover, :focus-visible) {
@@ -147,7 +150,8 @@ input:not([value=""]):not(:focus):invalid {
 
 /* utils */
 .muted {
-  color: hsl(var(--neutral5));
+  color: hsl(var(--neutral5));  
+  /* margin-top: -5%; */
 }
 
 .accent {
@@ -155,6 +159,6 @@ input:not([value=""]):not(:focus):invalid {
 }
 
 .grid-sm {
-  display: grid;
-  gap: calc(var(--space-2xs) * 0.5);
+  /* display: grid; */
+  /* margin-bottom: 2%; */
 }

@@ -13,7 +13,7 @@ const PersonalInfo = ({ name, email, phone, updateForm }: StepProps) => {
       <h2>Personal Info</h2>
       <p className="muted"> Please provide your name, email address, and phone number.</p>
       <div className="grid-sm">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name" className='heading'>Name</label>
         <input
           id="name"
           name="name"
@@ -28,7 +28,7 @@ const PersonalInfo = ({ name, email, phone, updateForm }: StepProps) => {
       </div>
 
       <div className="grid-sm">
-        <label htmlFor="email">Email Address</label>
+        <label htmlFor="email" className='heading'>Email Address</label>
         <input
           type="email"
           id="email"
@@ -42,7 +42,7 @@ const PersonalInfo = ({ name, email, phone, updateForm }: StepProps) => {
       </div>
 
       <div className="grid-sm">
-        <label htmlFor="phone">Phone Number</label>
+        <label htmlFor="phone" className='heading'>Phone Number</label>
         <input
           type="tel"
           placeholder="e.g. +1 234 567 890"

@@ -5,6 +5,12 @@
   .radio-wrapper {
     display: grid;
     gap: var(--space-2xs);
+    grid-template-columns: 28% 28% 28%; 
+  }
+
+  .radio-wrapper-checkbox{
+    display: grid;
+    gap: var(--space-2xs);
   }
   
   .radio {
@@ -14,6 +20,9 @@
     position: relative;
     display: flex;
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: var(--space-s);
     gap: var(--space-s);
   }
@@ -38,6 +47,7 @@
     border-radius: 0.6rem;
     padding: var(--space-s);
     position: relative;
+    width: 25vw;
   }
   
   .toggle label {
@@ -158,6 +168,7 @@
     color: hsl(var(--neutral5));
     font: inherit;
     text-decoration: underline;
+    cursor: pointer;
   }
   
   .line {
@@ -165,3 +176,13 @@
     background-color: hsl(var(--neutral4));
     margin-inline: var(--space-s);
   }
+
+  /* .heading{
+    margin-right: 40%;
+  } */
+
+  @media only screen and (max-width: 600px) {
+
+
+  }
+
